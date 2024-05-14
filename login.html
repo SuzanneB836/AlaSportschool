@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+</head>
+<body>
+    <div id="nav_container">
+        <a href="Index.php"><img id="nav_logo" src="IMAGES/logo.svg"/></a>
+            <div class="nav_links">
+                <a href="vindclub.html"> <h2 class="nav_links">VIND EEN CLUB</h2> </a>
+                <a href="groepslessen.html"> <h2 class="nav_links">GROEPSLESSEN</h2> </a>
+                <a href="overons.html"> <h2 class="nav_links">OVER ONS</h2> </a>
+                <a href="service.html"> <h2 class="nav_links">SERVICE/HELP</h2> </a>
+            </div>
+            <div id="lid_link">
+                <a href="login.html"> <h2 class="lid_link">INLOGGEN</h2> </a>
+            </div>
+    </div>    
+    </div>
+
+    <div id="login_img"></div>
+
+    <div id="login_container">
+        <div id="login_bg">
+            <h2> Login </h2>
+            <form action="login.php" method="post">
+                <div id="user_container">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div id="pass_container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div id="submit_container">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <h2> <br> Heb je nog geen account? <br> <a id="klik_hier" href="register.html">klik hier</a> om een account aan te maken!</h2>
+        </div>
+    </div>
+</body>
+</html>
