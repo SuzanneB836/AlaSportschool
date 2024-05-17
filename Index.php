@@ -65,7 +65,6 @@ if(isset($_SESSION['username'])) {
     <div id="footer_container">
         <p id="footer_text"> Over ons </p>
         <p id="footer_text"> Groepslessen </p>
-        <p id="footer_text"> Over ons </p>
         <p id="footer_text"> Service/help </p>
         <p id="footer_text"> TOS </p>
         <p id="footer_text"> Contact </p>
