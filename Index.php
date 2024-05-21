@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexFlow</title>
     <link rel="stylesheet" href="CSS/style.css"/>
-    <style>
-
-    </style>
 </head>
 <body>  
     <div id="nav_container">
@@ -25,7 +22,7 @@ if(isset($_SESSION['username'])) {
     echo '<a href="logout.php"> <h2 class="lid_link">UITLOGGEN</h2> </a>';
     echo '<div class="account">
             <a href="#" id="account-link">
-                <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; margin-left: 715px; height: 40px;">
+                <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; height: 40px;">
             </a>
           </div>';
     echo '<div id="blueSquare"></div>';
@@ -36,12 +33,6 @@ if(isset($_SESSION['username'])) {
 
 
         </div>
-        <!-- <div class="account">
-            <a href="#" id="account-link">
-                <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; height: 40px;">
-            </a>
-        </div> -->
-        <!-- <div id="blueSquare"></div> -->
     </div>
     <div id="banner">
         <h1>Sport nu!<br><span id="orange">4 weken</span> gratis</h1>
