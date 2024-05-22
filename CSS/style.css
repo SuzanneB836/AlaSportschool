@@ -241,11 +241,10 @@ a:link, a:visited, a:hover, a:active {
 .mapdiv {
   width: 100%;
   height: 100%;
-  margin-left: 50%;
 }
 
 #map {
   position: fixed;
-  height: 30%;
-  width: 30%;
+  height: 100%;
+  width: 100%;
 }
