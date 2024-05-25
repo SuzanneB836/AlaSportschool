@@ -8,7 +8,7 @@
 </head>
 <body>  
     <div id="nav_container">
-        <a href="Index.html"><img id="nav_logo" src="IMAGES/logo.svg"/></a>
+        <a href="Index.php"><img id="nav_logo" src="IMAGES/logo.svg"/></a>
         <div class="nav_links">
             <a href="vindclub.html"> <h2 class="nav_links">VIND EEN CLUB</h2> </a>
             <a href="groepslessen.html"> <h2 class="nav_links">GROEPSLESSEN</h2> </a>
