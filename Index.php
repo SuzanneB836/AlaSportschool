@@ -25,7 +25,12 @@ if(isset($_SESSION['username'])) {
                 <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; height: 40px;">
             </a>
           </div>';
-    echo '<div id="blueSquare"></div>';
+    echo '<div id="blueSquare">'
+    
+    .$_SESSION['username'].' 
+
+    </div>';
+
 } else {
     echo '<a href="login.html"> <h2 class="lid_link">INLOGGEN</h2> </a>';
 }
