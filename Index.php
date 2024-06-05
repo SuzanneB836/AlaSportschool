@@ -26,8 +26,8 @@ if(isset($_SESSION['username'])) {
             </a>
           </div>';
     echo '<div id="blueSquare">'
-    
-    .$_SESSION['username'].' 
+
+     .$_SESSION['username'].'
 
     </div>';
 
