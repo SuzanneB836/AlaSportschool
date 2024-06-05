@@ -8,7 +8,7 @@
 </head>
 <body>  
     <div id="nav_container">
-        <a href="Index.html"><img id="nav_logo" src="IMAGES/logo.svg"/></a>
+        <a href="Index.php"><img id="nav_logo" src="IMAGES/logo.svg"/></a>
         <div class="nav_links">
             <a href="vindclub.html"> <h2 class="nav_links">VIND EEN CLUB</h2> </a>
             <a href="groepslessen.html"> <h2 class="nav_links">GROEPSLESSEN</h2> </a>
@@ -25,7 +25,12 @@ if(isset($_SESSION['username'])) {
                 <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; height: 40px;">
             </a>
           </div>';
-    echo '<div id="blueSquare"></div>';
+    echo '<div id="blueSquare">'
+    
+    .$_SESSION['username'].' 
+
+    </div>';
+
 } else {
     echo '<a href="login.html"> <h2 class="lid_link">INLOGGEN</h2> </a>';
 }
