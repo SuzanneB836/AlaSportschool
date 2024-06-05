@@ -35,11 +35,8 @@ try {
             exit();
         }
     } else {
-        echo "<script src='login.js'></script>";
-        echo "</script>"; 
-        echo "<script>";
-        echo "showAlert();";
-        echo "</script>";
+        header("Location: login.html");
+        exit();
     }
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
