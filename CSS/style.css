@@ -205,15 +205,15 @@ a:link, a:visited, a:hover, a:active {
   width: 150%;
   height: 100vh;
   overflow: hidden;
-  color: orange;
   align-items: center;
   align-content: center;
   text-align: center;
 }
 
 #login_bg {
+  color: orange;
   width: 20%;
-  height: 40vh;
+  height: 45vh;
   margin-left: 60vw;
   overflow: hidden;
   background-image: linear-gradient(180deg, #2d2d2dbf, #2d2d2d9e);
@@ -221,15 +221,38 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #user_container {
+  color: orange;
   margin-top: 3vh;
 }
 
 #pass_container {
+  color: orange;
   margin-top: 2vh;
 }
 
 #email_container {
+  color: orange;
   margin-top: 2vh;
+}
+
+#picture_container {
+  margin-top: 2vh;
+  color: #fff;
+  cursor: pointer;
+}
+
+#picture_container::before {
+  content: 'Select a profile picture';
+  border: 1px solid #999;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+#picture_container input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
 #submit_container {
