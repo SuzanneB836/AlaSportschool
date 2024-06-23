@@ -20,16 +20,27 @@
 session_start();
 if(isset($_SESSION['username'])) {
     echo '<a href="logout.php"> <h2 class="lid_link">UITLOGGEN</h2> </a>';
-    echo '<div class="account">
-            <a href="#" id="account-link">
-                <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; height: 40px;">
-            </a>
-          </div>';
-    echo '<div id="blueSquare">'
 
-     .$_SESSION['username'].'
+// Retrieve the profile picture path from session
+if (isset($_SESSION['picture_path'])) {
+    $picture_path = $_SESSION['picture_path'];
+        echo '<div class="account">
+                <a href="#" id="account-link">
+                    <img src="' . $picture_path . '" alt="Account" id="account-img" style="width: 50px; height: 40px;">
+                </a>
+              </div>';
+    } else {
+        echo '<div class="account">
+                <a href="#" id="account-link">
+                    <img src="IMAGES/user.png" alt="Account" id="account-img" style="width: 50px; height: 40px;">
+                </a>
+              </div>';
+    }
 
-    </div>';
+    echo 
+        '<div id="blueSquare">
+            Welkom, ' . $_SESSION['username'] . '!
+        </div style="text-align: center;">';
 
 } else {
     echo '<a href="login.html"> <h2 class="lid_link">INLOGGEN</h2> </a>';

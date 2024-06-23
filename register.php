@@ -1,4 +1,6 @@
 <?php
+session_start(); // Start the session
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -60,8 +62,12 @@ try {
             $stmt->bindParam(':picture', $picture_path);
             $stmt->execute();
 
-            // Redirect to login page
-            header("Location: login.html");
+            // Store picture_path in session for later use
+            $_SESSION['picture_path'] = $picture_path;
+
+            // Redirect to index.php
+            header("Location: index.php");
+            exit();
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
