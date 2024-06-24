@@ -288,7 +288,7 @@ a:link, a:visited, a:hover, a:active {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(33.333% - 40px); /* Adjust the width and margin to fit three items per row */
+  flex: 1 1 calc(33.333% - 40px);
 }
 
 .lesson h2 {
