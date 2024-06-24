@@ -18,15 +18,17 @@
         <div id="lid_link">
         <?php
 session_start();
-if(isset($_SESSION['username'])) {
+
+// Assuming PATH_ROOT is defined elsewhere in your code
+if (isset($_SESSION['username'])) {
     echo '<a href="logout.php"> <h2 class="lid_link">UITLOGGEN</h2> </a>';
 
-// Retrieve the profile picture path from session
-if (isset($_SESSION['picture_path'])) {
-    $picture_path = $_SESSION['picture_path'];
+    // Retrieve the profile picture path from session
+    if (isset($_SESSION['picture_path'])) {
+        $picture_path = $_SESSION['picture_path'];
         echo '<div class="account">
                 <a href="#" id="account-link">
-                    <img src="' . $picture_path . '" alt="Account" id="account-img" style="width: 50px; height: 40px;">
+                    <img src="' . $picture_path . '" alt="Account" id="account-img" style="width: 50px; height: 40px; border: solid 1px orange;">
                 </a>
               </div>';
     } else {
@@ -37,15 +39,15 @@ if (isset($_SESSION['picture_path'])) {
               </div>';
     }
 
-    echo 
-        '<div id="blueSquare">
+    echo '<div id="blueSquare">
             Welkom, ' . $_SESSION['username'] . '!
-        </div style="text-align: center;">';
+          </div>';
 
 } else {
     echo '<a href="login.html"> <h2 class="lid_link">INLOGGEN</h2> </a>';
 }
 ?>
+
 
 
         </div>
