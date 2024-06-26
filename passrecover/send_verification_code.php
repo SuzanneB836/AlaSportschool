@@ -2,10 +2,10 @@
 session_start();
 
 // Include Composer's autoloader
-require 'PHPMailer/vendor/autoload.php';
+require '../PHPMailer/vendor/autoload.php';
 
-use PHPMailer\PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 $servername = "localhost";
 $dbname = "login";

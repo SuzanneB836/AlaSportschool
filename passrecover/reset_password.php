@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $update_stmt->bindParam(":email", $email);
         $update_stmt->execute();
 
-        header("Location: index.php");
+        header("Location: ../index.php");
         exit();
     } else {
         header("Location: reset_password.html?error=invalid_reset_token");
